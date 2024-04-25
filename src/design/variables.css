@@ -1,0 +1,24 @@
+:root {
+  /* colors */
+  --primary-900: #1dbf73;
+  --primary-100: #e9f9f1;
+  --grey-50: #f6f6f6;
+  --grey-300: #c3c5c8;
+  --grey-400: #8692a6;
+  --grey-800: #333333;
+  --warning-300: #ffcb31;
+  --error-300: #f56342;
+
+  /* font-sizes */
+  --font-size-xxs: 0.75rem;
+  --font-size-xs: 0.875rem;
+  --font-size-sm: 1rem;
+  --font-size-md: 1.125rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.5rem;
+  --font-size-4xl: 3.5rem;
+  --font-size-5xl: 4.5rem;
+  --font-size-6xl: 6rem;
+}
