@@ -201,6 +201,14 @@ ul {
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -870,6 +878,66 @@ ul {
   border: 1px solid;
   outline: none;
   border-radius: 0.5rem;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row-reverse; /* this is the magic */
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  cursor: pointer;
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+  /* reason why the stars are in reverse order in the html */
+  color: #ffcb31;
+}
+
+.rating input:checked ~ label {
+  color: #ffcb31;
+}
+
+.slider-images {
+  position: relative;
+}
+.slider-images .arrows {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.slider-images .arrow-left {
+  margin-left: 0.5rem;
+}
+.slider-images .arrow-right {
+  margin-right: 0.5rem;
+}
+.slider-images .dots {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+  width: 100%;
+  bottom: 2.5rem;
+}
+.slider-images .dot {
+  cursor: pointer;
+  margin: 0 0.2rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: white;
+}
+.slider-images .dot.active {
+  background-color: #1dbf73;
 }
 
 /*# sourceMappingURL=styles.css.map */

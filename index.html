@@ -93,46 +93,87 @@
       <section class="mt-8">
         <div class="flex gap-8 page">
           <div class="slider px-2">
-            <h4 class="text-grey-400 pl-2 font-normal py-4">Design / Logo Design</h4>
+            <h4 class="text-grey-400 font-normal py-4">Design / Logo Design</h4>
             <span class="font-medium">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet, 
             </span>
 
             <!-- star rating -->
             <div class="flex justify-between py-4">
-              <div class="flex">
-                <span>4.5</span>
-                <span>star rating</span>
+              <div class="flex justify-center">
+                <div class="rating">
+                  <input type="radio" id="star15" name="rating" value="5">
+                  <label class="text-xs text-grey-300" for="star15">&#9733;</label>
+                  <input type="radio" id="star14" name="rating" value="4">
+                  <label class="text-xs text-grey-300" for="star14">&#9733;</label>
+                  <input type="radio" id="star13" name="rating" value="3">
+                  <label class="text-xs text-warning" for="star13">&#9733;</label>
+                  <input type="radio" id="star12" name="rating" value="2">
+                  <label class="text-xs text-warning" for="star12">&#9733;</label>
+                  <input type="radio" id="star11" name="rating" value="1">
+                  <label class="text-xs text-warning" for="star11">&#9733;</label>
+                </div>
+                <span class="text-grey-400 text-xxs">4.5 (500)</span>
               </div>
               <div>
-                <span>icon</span><span>icon</span>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-share-nodes"></i>
               </div>
-          </div>
+
+            </div>
+            <div class="w-full slider-images">
+              <div class="arrows">
+                <!-- left and right arrows -->
+                <i class="text-2xl arrow-left fa-solid fa-circle-arrow-left"></i>
+                <i class="text-2xl arrow-right fa-solid fa-circle-arrow-right"></i>
+              </div>
+              <div class="dots">
+                
+                <span class="dot active
+                "></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <img src="src/resources/slide.png" alt="slide">
+
+            </div>
 
         </div>
         <!-- Seller -->
-        <div class="seller flex flex-col p-4">
+        <div class="seller flex flex-col p-4 bg-white">
           <p class="text-xs font-normal">Seller</p>
           <div class="m-auto text-center">
             <i class="fa-solid fa-user"></i>
             <p class="my-2 font-bold text-xs">
               Jane Smith
-              <span>verified</span>
+             <i class="fa-solid text-primary fa-circle-check"></i>
             </p>
-            <p class="text-grey-300">
-              <span>location</span>
+            <p class="text-grey-400">
+              <i class="fa-solid fa-location-dot"></i>
               Cairo, Egypt
             </p>
-            <div class="flex m-auto justify-center">
-              <span>4.5</span>
-              <span>star rating</span>
+            <div class="flex justify-center pt-2">
+              <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label class="text-xs text-grey-300" for="star5">&#9733;</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label class="text-xs text-grey-300" for="star4">&#9733;</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label class="text-xs text-warning" for="star3">&#9733;</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label class="text-xs text-warning" for="star2">&#9733;</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label class="text-xs text-warning" for="star1">&#9733;</label>
+              </div>
+              <span class="text-grey-400 text-xxs">4.5 (500)</span>
             </div>
-            <div class="justify-center">
-              <span>icon</span>
-              <span>icon</span>
-              <span>icon</span>
+            
+            <div class="justify-center gap-4 py-4 flex">
+              <i class="fa-solid fa-id-badge"></i>
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              <i class="fa-solid fa-address-card"></i>
             </div>
-            <p class="text-xxs">
+            <p class="text-xxs text-left">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
 Lorem ipsum dolor sit amet..
             </p>
