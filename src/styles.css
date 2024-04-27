@@ -842,10 +842,6 @@ ul {
     display: none;
   }
 }
-.nav-list .nav-list li:active i,
-.nav-list .nav-list li:active span {
-  color: #1dbf73; /* Change this to your desired color */
-}
 
 @media (max-width: 37.5em) {
   .page {

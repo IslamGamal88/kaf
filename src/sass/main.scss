@@ -15,11 +15,6 @@
   @include respond(tab-port) {
     display: none;
   }
-
-  .nav-list li:active i,
-  .nav-list li:active span {
-    color: $primary-900; /* Change this to your desired color */
-  }
 }
 
 .page {
