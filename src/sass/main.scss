@@ -1,0 +1,50 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./reset.scss";
+@import "./utils.scss";
+
+.nav {
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  .admin {
+    justify-content: flex-end;
+  }
+}
+
+.nav-list {
+  @include respond(tab-port) {
+    display: none;
+  }
+
+  .nav-list li:active i,
+  .nav-list li:active span {
+    color: $primary-900; /* Change this to your desired color */
+  }
+}
+
+.page {
+  @include respond(phone) {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .slider {
+    flex-grow: 5;
+    @include respond(phone) {
+      order: 2;
+    }
+  }
+
+  .seller {
+    flex-grow: 2;
+    width: 296px;
+    @include respond(phone) {
+      order: 1;
+    }
+    .contact {
+      border: 1px solid;
+      outline: none;
+      border-radius: 0.5rem;
+    }
+  }
+}

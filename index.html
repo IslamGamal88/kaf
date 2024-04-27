@@ -6,28 +6,140 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <link rel="stylesheet" href="index.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+      </style>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://kit.fontawesome.com/46c43cb17e.js" crossorigin="anonymous"></script>
+    <script src="src/app.js" defer></script>
     <title>Kaf</title>
   </head>
   <body>
     <section aria-label="nav">
-      <nav class="container bg-white flex py-3">
-        <div class="nav-logo">
-          <img
-            class="w-full"
-            src="src/resources/main-logo2 1.jpg"
-            alt="kaf logo"
-          />
+      <nav class="bg-white nav">
+        <div
+          class="container flex py-3  align-center  h-full"
+        >
+          <!-- logo -->
+          <div class="grow-1">
+            <img
+              class="nav-logo"
+              src="src/resources/main-logo2 1.jpg"
+              alt="kaf logo"
+            />
+          </div>
+
+          <!-- links -->
+          <ul class="flex grow-3 nav-list justify-evenly">
+            <li class="flex flex-col justify-center align-center gap-2" data-testid="auctions">
+              <i class="fa-solid text-grey-300 text-md fa-cart-shopping text-primary"></i>
+              <span class="text-xxs text-grey-300">
+                Auctions
+              </span>
+            </li>
+            <li class="flex flex-col justify-center align-center gap-2" 
+            data-testid="contacts"
+            >
+              <i class="fa-solid text-grey-300 text-md fa-trophy"></i>
+              <span class="text-xxs text-grey-300">
+                Contacts
+              </span>
+            <li class="flex flex-col justify-center align-center gap-2"
+            data-testid="project"
+            >
+              <i class="fa-solid text-grey-300 text-md fa-briefcase"></i>
+              <span class="text-xxs text-grey-300">
+                Project
+              </span>
+            </li>
+            <li class="flex flex-col justify-center align-center gap-2"
+            data-testid="portfolios"
+            >
+              <i class="fa-solid text-grey-300 text-md fa-image"></i>
+              <span class="text-xxs text-grey-300">
+                Portfolios
+              </span>
+            </li>
+            <li class="flex flex-col justify-center align-center gap-2"
+            data-testid="freelancers"
+            >
+              <i class="fa-solid text-grey-300 text-md fa-users"></i>
+              <span class="text-xxs text-grey-300">
+                Freelancers
+              </span>
+            </li>
+            <li class="flex flex-col justify-center align-center gap-2"
+            data-testid="forum"
+            >
+              <i class="fa-solid text-grey-300 text-md fa-comments"></i>
+              <span class="text-xxs text-grey-300">
+                Forum
+              </span>
+            </li>
+          </ul>
+
+          <!-- user actions -->
+          <div class="grow-1 flex admin">
+            <i class="fa-solid fa-comment"></i>
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-user"></i>
+          </div>
         </div>
-        <ul class="flex">
-          <li>icon</li>
-          <li>icon</li>
-          <li>icon</li>
-          <li>icon</li>
-          <li>icon</li>
-          <li>icon</li>
-        </ul>
       </nav>
     </section>
+
+    <main class="container">
+      <!-- Design / Logo -->
+      <section class="mt-8">
+        <div class="flex gap-8 page">
+          <div class="slider px-2">
+            <h4 class="text-grey-400 pl-2 font-normal py-4">Design / Logo Design</h4>
+            <span class="font-medium">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet, 
+            </span>
+
+            <!-- star rating -->
+            <div class="flex justify-between py-4">
+              <div class="flex">
+                <span>4.5</span>
+                <span>star rating</span>
+              </div>
+              <div>
+                <span>icon</span><span>icon</span>
+              </div>
+          </div>
+
+        </div>
+        <!-- Seller -->
+        <div class="seller flex flex-col p-4">
+          <p class="text-xs font-normal">Seller</p>
+          <div class="m-auto text-center">
+            <i class="fa-solid fa-user"></i>
+            <p class="my-2 font-bold text-xs">
+              Jane Smith
+              <span>verified</span>
+            </p>
+            <p class="text-grey-300">
+              <span>location</span>
+              Cairo, Egypt
+            </p>
+            <div class="flex m-auto justify-center">
+              <span>4.5</span>
+              <span>star rating</span>
+            </div>
+            <div class="justify-center">
+              <span>icon</span>
+              <span>icon</span>
+              <span>icon</span>
+            </div>
+            <p class="text-xxs">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+Lorem ipsum dolor sit amet..
+            </p>
+          </div>
+          <button class="bg-primary text-white text-xs py-1 contact">Contact me</button>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
