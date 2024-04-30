@@ -52,7 +52,7 @@
 }
 
 .container {
-  max-width: 90rem;
+  max-width: 75rem;
   margin: 0 auto;
   padding: 0 6.5rem;
   @include respond(tab-port) {

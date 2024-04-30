@@ -24,17 +24,16 @@
   }
 
   .slider {
-    flex-grow: 5;
     @include respond(phone) {
       order: 2;
     }
   }
 
   .seller {
-    flex-grow: 2;
-    width: 296px;
+    max-width: 296px;
+    // max-height: 431px;
     @include respond(phone) {
-      order: 1;
+      max-width: 100%;
     }
     .contact {
       border: 1px solid;
@@ -78,11 +77,11 @@
     transform: translateY(-50%);
   }
   .arrow-left {
-    margin-left: 0.5rem;
+    margin-left: 2%;
   }
 
   .arrow-right {
-    margin-right: 0.5rem;
+    margin-right: 2%;
   }
 
   .dots {
@@ -91,7 +90,7 @@
     justify-content: center;
     margin-top: 0.5rem;
     width: 100%;
-    bottom: 2.5rem;
+    bottom: 10%;
   }
 
   .dot {
@@ -105,4 +104,14 @@
       background-color: $primary-900;
     }
   }
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  background-image: url(resources/slide.png);
+  background-size: cover;
+  background-position: center;
+  // border-radius topleft and bottom left only
+  border-radius: 0.7rem 0 0 0.7rem;
 }
